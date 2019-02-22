@@ -2,6 +2,11 @@ h2 {
     color: royalblue;
 }
 
+.panel-heading {
+    background-color: green;
+    color: white;
+}
+
 #employeePanel {
     margin-top: 50px;
 }

@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { EmployeesComponent } from './employees/employees.component';
 import { EmployeesAddComponent } from './employees/employees-add/employees-add.component';
 import { EmployeesListComponent } from './employees/employees-list/employees-list.component';
+import {HttpClient, HttpClientModule} from "@angular/common/http";
+import {EmployeesService} from "./employees/employees.service";
+import {MessageService} from "./message.service";
 
 @NgModule({
   declarations: [
@@ -16,9 +19,11 @@ import { EmployeesListComponent } from './employees/employees-list/employees-lis
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+      HttpClientModule,
+
   ],
-  providers: [],
+  providers: [EmployeesService, MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
