@@ -28,6 +28,6 @@ public class Employee {
     private String zipCode;
     private String emailAddress;
     private String phoneNumber;
-    @JsonFormat(pattern = "MM/dd/yyy")
+    @JsonFormat(pattern = "yyyy-MM-dd")
     private LocalDate dob;
 }

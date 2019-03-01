@@ -9,6 +9,9 @@ import { EmployeesListComponent } from './employees/employees-list/employees-lis
 import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {EmployeesService} from "./employees/employees.service";
 import {MessageService} from "./message.service";
+import {FormsModule} from "@angular/forms";
+import {DATE} from "ngx-bootstrap/chronos/units/constants";
+import {DatepickerModule} from "ngx-bootstrap";
 
 @NgModule({
   declarations: [
@@ -21,6 +24,8 @@ import {MessageService} from "./message.service";
     BrowserModule,
     AppRoutingModule,
       HttpClientModule,
+      FormsModule,
+      DatepickerModule
 
   ],
   providers: [EmployeesService, MessageService],

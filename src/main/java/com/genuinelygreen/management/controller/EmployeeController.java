@@ -19,8 +19,10 @@ public class EmployeeController {
         return this.employeeService.list();
     }
 
+    @CrossOrigin
     @PostMapping("/save")
     public Employee saveEmployee(@RequestBody Employee employee){
+        System.out.println(employee.getFName());
         return this.employeeService.save(employee);
     }
 }

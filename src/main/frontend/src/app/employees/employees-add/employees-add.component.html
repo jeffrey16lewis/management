@@ -1,61 +1,72 @@
-<div class="form-group">
-    <div class="row">
-        <div class="col-md-6">
-            <input type="text"
-                   class="form-control"
-                   placeholder="First name"/>
+<form #employeeData="ngForm" (submit)="onClickSubmit(employeeData.value)">
+    <div class="form-group">
+        <div class="row">
+            <div class="col-md-6">
+                <input type="text"
+                       class="form-control"
+                       name="fname"
+                       placeholder="First name" ngModel>
+            </div>
+            <div class="col-md-6">
+                <input type="text"
+                       class="form-control"
+                       name="lname"
+                       placeholder="Last name" ngModel>
+            </div>
         </div>
-        <div class="col-md-6">
-            <input type="text"
-                   class="form-control"
-                   placeholder="Last name"/>
+        <br>
+        <div class="row">
+            <div class="col-md-4">
+                <input type="text"
+                       class="form-control"
+                       name="streetAddress"
+                       placeholder="Street address" ngModel>
+            </div>
+            <div class="col-md-4">
+                <input type="text"
+                       class="form-control"
+                       name="city"
+                       placeholder="City" ngModel>
+            </div>
+            <div class="col-md-4">
+                <input type="text"
+                       class="form-control"
+                       name="state"
+                       placeholder="State" ngModel>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-3">
+                <input type="text"
+                       class="form-control"
+                       name="zipCode"
+                       placeholder="Zip Code" ngModel>
+            </div>
+            <div class="col-md-3">
+                <input type="text"
+                       class="form-control"
+                       name="email"
+                       placeholder="Email" ngModel>
+            </div>
+            <div class="col-md-3">
+                <input type="text"
+                       class="form-control"
+                       name="phoneNumber"
+                       placeholder="Phone Number" ngModel>
+            </div>
+            <div class="col-md-3">
+                <input type="date"
+                       class="form-control"
+                       name="dob"
+                       placeholder="Birth date" ngModel>
+            </div>
+        </div>
+        <br>
+        <div class="row text-right">
+            <div class="col-md-12">
+                <input type="submit" value="Add" class="btn btn-primary">
+            </div>
         </div>
     </div>
-    <br>
-    <div class="row">
-        <div class="col-md-4">
-            <input type="text"
-                   class="form-control"
-                   placeholder="Street address">
-        </div>
-        <div class="col-md-4">
-            <input type="text"
-                   class="form-control"
-                   placeholder="City">
-        </div>
-        <div class="col-md-4">
-            <input type="text"
-                   class="form-control"
-                   placeholder="State">
-        </div>
-    </div>
-    <br>
-    <div class="row">
-        <div class="col-md-3">
-            <input type="text"
-                   class="form-control"
-                   placeholder="Zip Code">
-        </div>
-        <div class="col-md-3">
-            <input type="text"
-                   class="form-control"
-                   placeholder="Email">
-        </div>
-        <div class="col-md-3">
-            <input type="text"
-                   class="form-control"
-                   placeholder="Phone Number">
-        </div>
-        <div class="col-md-3">
-            <input type="text"
-                   class="form-control"
-                   placeholder="Birth date">
-        </div>
-    </div>
-    <br>
-    <div class="row text-right">
-        <div class="col-md-12">
-            <input type="submit" value="Add" class="btn btn-primary">
-        </div>
-    </div>
-</div>
+</form>
